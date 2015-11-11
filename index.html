@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/defaulticon/icons/png/256x256/redo.png">
+    <title>Turn the letter</title>
+</head>
+
+<body>
+    <header class="center">
+        <h><strong>Welcome</strong></h>
+        <p>Just click on the buttons to rotate the letter...</p>
+    </header>
+    
+    <main>
+        <div class="center">
+            <button name="button" onclick="rotateImage(-90)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Turn letter counterclockwise</button>
+            <button name="button" onclick="checkImage()" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Check</button>
+            <button name="button" onclick="rotateImage(90)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Turn letter clockwise</button>
+        </div>
+        
+        <div class="center">
+            <button name="button" onclick="scaleImage(50)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Zoom in</button>
+            <button name="button" onclick="getImage(1)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Next letter</button>
+            <button name="button" onclick="scaleImage(-50)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Zoom out</button>
+        </div>
+        
+        <div>
+            <img id="image" src="http://yatron.kucdweb.com/letterpng/aleph.png"/>
+        </div>
+    </main>
+    
+    <footer>
+        <p id="copyright" onmouseover="email.style.display='inline-block'" onmouseout="email.style.display='none'">© Schuijtemaker productions</p>
+        <p id="email">Contact: lschuijtemaker@hotmail.com</p>
+    </footer>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
