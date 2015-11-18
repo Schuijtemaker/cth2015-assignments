@@ -4,30 +4,32 @@
     <meta charset="utf-8"/>
     <link type="text/css" rel="stylesheet" href="style.css">
     <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/defaulticon/icons/png/256x256/redo.png">
-    <title>Turn the letter</title>
+    <title>Turn the manuscript</title>
 </head>
 
 <body>
     <header class="center">
         <h><strong>Welcome</strong></h>
-        <p>Just click on the buttons to rotate the letter...</p>
+        <p>Just click on the buttons to rotate the page of the Medieval manuscript...</p>
+        <p2>Hint: you can make it more difficult by making the image smaller.</p2>
     </header>
     
     <main>
         <div class="center">
-            <button name="button" onclick="rotateImage(-90)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Turn letter counterclockwise</button>
+            <button name="button" onclick="rotateImage(-90)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Turn image counterclockwise</button>
             <button name="button" onclick="checkImage()" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Check</button>
-            <button name="button" onclick="rotateImage(90)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Turn letter clockwise</button>
+            <button name="button" onclick="rotateImage(90)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Turn image clockwise</button>
         </div>
         
         <div class="center">
             <button name="button" onclick="scaleImage(50)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Zoom in</button>
-            <button name="button" onclick="getImage(1)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Next letter</button>
+            <button name="button" onclick="getImage(-1)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Previous image</button>
+            <button name="button" onclick="getImage(1)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Next image</button>            
             <button name="button" onclick="scaleImage(-50)" onmouseout="this.style.background='#000033'" onmouseover="this.style.background='#000066'" onmousedown="this.style.background='#FF6600'" onmouseup="this.style.background='#000066'">Zoom out</button>
         </div>
         
         <div>
-            <img id="image" src="http://yatron.kucdweb.com/letterpng/aleph.png"/>
+            <img id="image" src="http://www.eurobasket.com/images/loader.gif"/>
         </div>
     </main>
     
